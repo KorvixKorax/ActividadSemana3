@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cvMascotas"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="@dimen/cardcornerradius"
+    >
+
+    <LinearLayout
+        android:layout_width="@dimen/perfilancho"
+        android:layout_height="@dimen/perfilalto"
+        android:orientation="vertical"
+        android:background="@color/colorLayout"
+        android:layout_marginTop="@dimen/margenfotoalto"
+        >
+
+        <ImageView
+            android:id="@+id/imgMascota"
+            android:layout_width="@dimen/fotoancho"
+            android:layout_height="@dimen/fotoalto"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margenfotoalto"
+            android:src="@drawable/paw_print_512"
+            android:background="@color/colorLayoutletra"/>
+
+        <TextView
+            android:id="@+id/nombreMascota"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margenfotoalto"
+            android:text="@string/nombreMascota"
+            android:textSize="@dimen/nombrecardview"
+            android:textStyle="bold"/>
+
+        <ImageButton
+            android:layout_width="@dimen/botonperfancho"
+            android:layout_height="@dimen/botonperfalto"
+            android:background="@color/colorPrimary"/>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
